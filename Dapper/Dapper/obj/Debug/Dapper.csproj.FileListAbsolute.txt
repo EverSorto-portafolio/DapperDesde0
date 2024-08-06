@@ -1,0 +1,15 @@
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\Dapper.exe.config
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\Dapper.exe
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\Dapper.pdb
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.csproj.AssemblyReference.cache
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.Properties.Resources.resources
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.csproj.GenerateResource.cache
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.csproj.CoreCompileInputs.cache
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.exe
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.pdb
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\AccesoDatos.dll
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\Dapper.dll
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\AccesoDatos.pdb
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\bin\Debug\Dapper.xml
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.Form1.resources
+C:\Users\everc\OneDrive\Documentos\progra2\DapperDemo\Dapper\Dapper\obj\Debug\Dapper.csproj.Up2Date
