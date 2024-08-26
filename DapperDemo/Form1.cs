@@ -14,6 +14,7 @@ namespace DapperDemo
     public partial class Form1 : Form
     {
         CustomerRepository customerR = new CustomerRepository();
+
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +31,12 @@ namespace DapperDemo
         {
             var cliente = customerR.ObtenerTodos();
             dgvCustomers.DataSource = cliente;  
+        }
+
+        private void btnObtenerId_Click(object sender, EventArgs e)
+        {
+            var cliente = customerR.ObtenerPorID(tboxOBtenerID.Text);
+             dgvCustomers.DataSource = new List<Customers> { cliente };
         }
     }
 }
