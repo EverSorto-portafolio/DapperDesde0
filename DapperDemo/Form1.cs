@@ -20,8 +20,6 @@ namespace DapperDemo
             InitializeComponent();
         }
 
-     
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -37,6 +35,36 @@ namespace DapperDemo
         {
             var cliente = customerR.ObtenerPorID(tboxOBtenerID.Text);
              dgvCustomers.DataSource = new List<Customers> { cliente };
+        }
+
+        private Customers CrearCliente() {
+            var nuevo = new Customers {
+                CustomerID = txbCustomerId.Text,
+                CompanyName = txbCompanyName.Text,
+                ContactName = txbContactName.Text,
+                ContactTitle= tbxContactTitle.Text,
+                Address= txbAddress.Text
+            };
+            return nuevo;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            var nuevoCliente = CrearCliente();
+            var insertado = customerR.insertarCliente(nuevoCliente);
+            MessageBox.Show($"{insertado} registros insertados");
         }
     }
 }
