@@ -91,5 +91,11 @@ namespace DapperDemo
             MessageBox.Show($"filas actualizadas {actualizados} , {clienteActualizado.CustomerID}");
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            var eliminadas = customerR.EliminarCliente(tboxOBtenerID.Text);
+            MessageBox.Show($"Se ha eliminado {eliminadas} filas de manera correcta");
+        }
     }
 }

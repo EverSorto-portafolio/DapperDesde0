@@ -11,7 +11,6 @@ namespace AccesoDatos
 {
     public  class CustomerRepository
     {
-
         public List<Customers> ObtenerTodos() {
             using (var conexion = DataBase.GetSqlConnection()) {
 
@@ -107,5 +106,21 @@ namespace AccesoDatos
             }
         }
 
+
+        public int EliminarCliente(string Id) {
+
+            using (var conexion = DataBase.GetSqlConnection()) {
+
+                String Delete = "";
+                Delete = Delete + "DELETE FROM [dbo].[Customers] " + "\n";
+                Delete = Delete + "      WHERE CustomerID = @CustomerID";
+
+                var eliminadas = conexion.Execute(Delete, new
+                {
+                    CustomerID = Id
+                });
+                return eliminadas;
+            }
+        }
     }
 }
