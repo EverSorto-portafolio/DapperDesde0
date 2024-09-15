@@ -33,7 +33,7 @@ namespace AccesoDatos
                 return cliente;
             }
         }
-                public Customers ObtenerPorID(string id) {
+        public Customers ObtenerPorID(string id) {
 
             using (var conexion = DataBase.GetSqlConnection()) {
 
@@ -83,5 +83,29 @@ namespace AccesoDatos
                 return insertadas;
             }
         }
+        public int AcctualizarCliente(Customers customers) {
+            using (var conexion = DataBase.GetSqlConnection()) {
+                String UpdateCustomer = "";
+                UpdateCustomer = UpdateCustomer + "UPDATE [dbo].[Customers] " + "\n";
+                UpdateCustomer = UpdateCustomer + "   SET [CustomerID] = @CustomerID " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[CompanyName] = @CompanyName " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[ContactName] = @ContactName " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[ContactTitle] = @ContactTitle " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[Address] = @Address " + "\n";
+                UpdateCustomer = UpdateCustomer + " WHERE CustomerID = @CustomerID";
+
+
+                var actualizadas =
+                    conexion.Execute(UpdateCustomer, new {
+                    CustomerID = customers.CustomerID,
+                        CompanyName = customers.CompanyName,
+                        ContactName = customers.ContactName,
+                        ContactTitle = customers.ContactTitle,
+                        Address = customers.Address
+                    });
+                return actualizadas;
+            }
+        }
+
     }
 }
